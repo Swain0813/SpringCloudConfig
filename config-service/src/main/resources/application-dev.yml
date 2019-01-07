@@ -1,0 +1,16 @@
+server:
+  port: 8888
+Spring:
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+         uri: https://github.com/Swain0813/Config.git
+         searchPaths: respo
+         username:
+         password:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
